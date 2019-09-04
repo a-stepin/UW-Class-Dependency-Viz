@@ -4,4 +4,7 @@ page = requests.get("https://www.cs.washington.edu/education/courses/")
 print (page)
 
 soup = BeautifulSoup(page.content, 'html.parser')
-rows = list(soup.find_all('div', class_='views-row'))
+rows = soup.find_all('div', class_='views-row')
+links = rows.find_all
+
+d = {"": ""}
